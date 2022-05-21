@@ -24,9 +24,9 @@ penjelasan, script, dan output
 
 
 # Pengunduhan Script Pemodelan Oseanografi
-1. Klik releases pada repositori ini.
-2. Klik script yang ingin diunduh.
-3. Script akan terunduh secara otomatis.
+1. Klik *releases* pada repositori ini.
+2. Klik *script* yang ingin diunduh.
+3. *Script* akan terunduh secara otomatis.
 
 
 # *Kelompok 6 Pemodelan Oseanografi*
