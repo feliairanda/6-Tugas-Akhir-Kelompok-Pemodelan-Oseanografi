@@ -21,8 +21,6 @@ penjelasan, script, dan output
 # *Hidrodinamika 2D*
 # Teori Dasar:
 
-# Script:
-
 # Output:
 
 # Analisis:
