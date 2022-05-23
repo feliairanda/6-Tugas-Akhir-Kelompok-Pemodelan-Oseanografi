@@ -7,12 +7,24 @@ Repositori ini dibuat untuk memenuhi tugas akhir kelompok praktikum Pemodelan Os
 
 
 # *Adveksi-Difusi 2D*
-**TEORI DASAR:** 
+# Teori Dasar:
 Adveksi yaitu mekanisme perpindahan massa suatu materi dari satu titik ke titik lainnya. Sedangkan Difusi yaitu mekanisme penyebaran konsentrasi akibat adanya kecepatan aliran dan perbedaan konsentrasi. Bentuk 2D terlihat dari beda waktu dan beda ruang.
+![image](https://user-images.githubusercontent.com/105983387/169820368-b5d5b5d8-a818-4bae-bbd8-5de4f62ee48f.png)
+Persamaan adveksi difusi merupakan persamaan umum yang menggambarkan proses adveksi serta difusi yang terjadi pada suatu materi sehingga untuk membentuk suatu persamaan model 2D yang mendekati proses kejadian di alam. Dimana kedua persamaan tersebut menggambarkan dua peristiwa yang terjadi dimana Adveksi adalah proses perpindahan suatu konsentrasi zat akibat adanya suatu aliran dan difusi merupakan proses perpindahan suatu konsentrasi zat dari konsentrasi tinggi ke konsentrasi yang rendah.
+Untuk pengaplikasian persamaan Adveksi-Difusi 2 Dimensi dalam bidang oseanografi, yaitu untuk memprediksi penyebaran nutrien dan polutan di suatu perairan.
 
-![image](https://user-images.githubusercontent.com/105983387/169819206-a22c423e-a3d4-427b-b54d-c1e085592105.png)
+Dalam proses pemograman Adveksi dan Difusi 2 Dimensi ini dibutuhkan beberapa library yaitu numpy, sys, dan matplotlib. Library Numpy akan bekerja untuk memproses serta menyimpan data dan ditampilkan dalam bentuk grid atau matriks. Library Sys berfungsi dan bekerja untuk mengakses konfigurasi interpreter pada saat runtime dan berinteraksi dengan environment sistem operasi dan yang terakhir adalah library Matplotlib berfungsi sebagai pembuat plot grafik dari hasil pemograman yang sudah dirunning.
+Adapun parameter yang dibutuhkan dalam proses running Adveksi dan Disfusi yaitu :
+C = kecepatan aliran
+Q = kriteria kestabilan
+Dt = perubahan waktu
+Dx = jarak antar grid horizontal
+Dy = jarak antar grid vertical
+Px = jumlah polutan pada sumbu x
+Py = jumlah polutan pada sumbu y
+Ic = jumlah polutan total
 
-**_SCRIPT_**
+# Script 
   Import library yang dibutuhkan dan pendefinisian
 ```
 import matplotlib.pyplot as plt
@@ -103,18 +115,14 @@ F = np.zeros((Nt+1,Ny+2,Nx+2))
   ```
     
 # *Hidrodinamika 1D*
-**TEORI DASAR:**  
-Hidrodinamika merupakan salah satu cabang ilmu pengetahuan yang mempelajari gerak liquid atau gerak fluida cair khususnya gerak air yang dipengaruhi oleh gaya eksternal dan internal. Terdapat dua jenis transport dalam hidrodinamika, yaitu Adveksi dan Difusi. Pada pemodelan hidrodinamika 1D, digunakan konversi massa dan hukum momentum yang diperuntukkan untuk simulasi tinggi muka air laut dan aliran arus yang dibangkitkan oleh angin, gelombang, pasang surut, dll
-
-**PERSAMAAN UTAMA**
-
+penjelasan, script, dan output
 
 
 
 # *Hidrodinamika 2D*
-**TEORI DASAR:**
+# Teori Dasar:
 
-**_OUTPUT_:**
+# Output:
 ![Kelompok 6](https://user-images.githubusercontent.com/106006093/169685569-5a22b2ce-9e7c-442e-b167-ccc6a44bdb83.png)
 # Analisis:
 Data parameter yang digunakan diantaranya tekanan, kecepatan angin, arah angin, dan temperatur air pada tanggal 22 Maret 2022 sampai 8 Mei 2022. Grafik diatas diperoleh dari hasil ekstrak data NDBC (National Data Buoy Center) milik NOAA yang kemudian diplot-kan dalam bentuk grafik. Lokasi pengamatan yaitu di stastion ID 41008 yang berada di lepas pantai Georgia, Amerika Serikat, tepatnya pada tenggara Savannah pada koordinat 31.400 N 80.866 W (31°24'0" N 80°51'59" W). Berdasarkan hasil diatas, terdapat 3 grafik dengan warna yang berbeda. Grafik pertama merupakan grafik tekanan, dari gambar tersebut tekanan di lokasi yang ditinjau menunjukkan nilai terendah sebesar 1002 hPa dan yang tertinggi 1038 hPa. Namun di setiap minggunya, grafik menggambarkan fluktuasi tekanan yang tidak konstan dimana tekanan cenderung naik turun dengan nilai terendah berada pada awal bulan April dan nilai tertinggi berada pada akhir bulan April. Begitupula dengan grafik kecepatan angin dan arah angin yang menggambarkan fluktuasi naik turun dengan kecepatan angin tertinggi sebesar 22 m/s dan yang terendah sebesar 0,1 m/s. Arah angin berkisar di 20° - 320°. Untuk grafik ketiga yaitu grafik temperatur yang digambarkan dengan warna biru langit menunjukkan fluktuasi yang tidak konstan dengan kisaran rata-rata berada di 21°C. Suhu tertinggi berada pada awal Mei dengan nilai 26°C dan yang terendah terjadi pada akhir Maret dengan nilai 17°C. Dari grafik yang terlihat, suhu dan tekanan memiliki bentuk grafik yang berbanding terbalik, begitupula dengan suhu dan kecepatan angin. Artinya ketika suhu bernilai rendah, maka tekanan dan kecepatan angin tinggi. Sedangkan untuk hubungan tekanan dan kecepatan angin yaitu linier, sehingga bentuk grafik nya hampir sama. Tekanan udara di permukaan bumi ditentukan oleh kerapatan massa udara. Semakin padat udara, semakin tinggi tekanannya. Kepadatan udara erat kaitannya dengan suhu, radiasi matahari, kelembaban dan gravitasi. Di daerah dengan udara tipis, tekanan permukaan rendah. Di daerah dengan udara padat, tekanan permukaan tinggi. Temperatur dan tekanan itu sendiri mempunyai hubungan terbalik, ketika temperatur rendah maka tekanannya tinggi karena densitas massa udara disana tinggi. Di sisi lain, ketika suhu tinggi, tekanan udara di atas rendah karena densitas massa rendah. Perbedaan tekanan ini kemudian menciptakan gerakan angin dan mempengaruhi kecepatan angin. Perbedaan tekanan udara pada daerah yang berbeda pada ketinggian yang sama disebabkan oleh perbedaan radiasi matahari yang diterima. Hal ini sesuai dengan pandangan Stewart (2008) bahwa angin bergerak dari tekanan tinggi ke tekanan rendah dan kecepatan angin ditentukan oleh laju perubahan tekanan, dimana tekanan udara mempengaruhi perubahan kecepatan angin. Besarnya kecepatan angin ini akan berhubungan dengan tinggi gelombang yang ditimbulkan oleh angin tersebut. Bila kecepatan angin tinggi maka gelombang di daerah tersebut juga akan semakin tinggi.
