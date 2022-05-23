@@ -7,7 +7,17 @@ Repositori ini dibuat untuk memenuhi tugas akhir kelompok praktikum Pemodelan Os
 - Masukan dan susun script python Anda dan klik Run untuk menjalankan script tersebut.
 
 # *Adveksi-Difusi 1D*
+**Latar Belakang**
+Persamaan diferensial parsial merupakan persamaan diferensial yang melibatkan turunan parsial dari satu atau lebih variabel terikat dengan lebih dari satu variabel bebas. Persamaan diferensial dapat digunakan untuk memodelkan permasalahan sehari-hari yang biasa ditemukan seperti konduksi panas pada batang atau lempengan, menentukan muatan atau arus dalam rangkaian listrik, menentukan getaran kawat atau membran, tingkat pertumbuhan populasi, dan masih banyak lagi. Salah satu contoh permasalahan yang dapat dimodelkan dalam persamaan diferensial adalah difusi dan adveksi. Difusi merupakan proses transportasi materi dari suatu sistem ke bagian yang lain sebagai hasil dari gerakan molekul acak. Sedangkan, adveksi merupakan proses transportasi berupa aliran rata-rata atau arus, seperti sungai atau gerakan pasang surut yang digerakkan oleh gaya gravitasi atau tekanan dan berupa gerak horizontal. Persamaan difusi-adveksi merupakan model matematika yang menggambarkan proses transportasi suatu zat yang dipengaruhi gaya gravitasi dan penyebaran sekaligus. 
 
+**Persamaan**
+Persamaan difusi-adveksi satu dimensi (1D) dapat ditulis sebagai berikut :
+![image](https://user-images.githubusercontent.com/105999254/169869170-fdbf74a6-9cb8-4f19-b07d-030bf108c452.png)
+
+Dengan :
+V : Kecepatan Adveksi
+D : Koefisien Difusi
+Persamaan di atas terlebih dahulu diubah dalam bentuk operator diferensial L sampai bentuk operator adjoin L*.Setelah itu, domain semi-tak hingga dan syarat batas Dirichlet diterapkan pada solusi umum persamaan difusi-adveksi. Setelah melalui tahap-tahap tersebut, diperoleh solusi principal dan solusi reguler. Solusi principal merupakan solusi dari bentuk tak homogen persamaan diferensial tanpa memperhatikan syarat batas. Sedangkan, solusi reguler merupakan solusi dari bentuk homogen persamaan diferensial dengan syarat batas. Setelah diperoleh solusi principal dan solusi reguler, fungsi Green didapatkan dengan menjumlahkan keduanya. Terakhir, jika fungsi Green disubstitusikan ke solusi umum persamaan difusi-adveksi pada domain semi-tak hingga dan syarat batas Dirichlet, maka solusi persamaan difusi-adveksi dapat diperoleh dengan menyelesaikan integrasinya.
 
 # *Adveksi-Difusi 2D*
 **TEORI DASAR:** 
