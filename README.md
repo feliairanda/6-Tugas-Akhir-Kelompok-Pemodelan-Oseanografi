@@ -1,6 +1,6 @@
 # 6-Tugas-Akhir-Kelompok-Pemodelan-Oseanografi
 Repositori ini dibuat untuk memenuhi tugas akhir kelompok praktikum Pemodelan Oseanografi 2022. Terdapat 4 materi yang ada di respositori ini, yaitu Adveksi-Difusi 1D, Adveksi-Difusi 2D, Hidrodinamika 1D, dan Hidrodinamika 2D. Bahasa pemograman yang digunakan pada keempat materi tersebut adalah *Python* yang dapat dikerjakan pada *text editor Google Colaboratory dan Jupyter Notebook*. Modul yang digunakan pada repositori ini adalah *matplotlib*, *numpy*, dan *sys*.
-
+# Proses Penjalanan 
 
 
 # *Adveksi-Difusi 1D*
@@ -9,6 +9,9 @@ Repositori ini dibuat untuk memenuhi tugas akhir kelompok praktikum Pemodelan Os
 # *Adveksi-Difusi 2D*
 # Teori Dasar:
 Adveksi yaitu mekanisme perpindahan massa suatu materi dari satu titik ke titik lainnya. Sedangkan Difusi yaitu mekanisme penyebaran konsentrasi akibat adanya kecepatan aliran dan perbedaan konsentrasi. Bentuk 2D terlihat dari beda waktu dan beda ruang.
+
+![image](https://user-images.githubusercontent.com/105983387/169819206-a22c423e-a3d4-427b-b54d-c1e085592105.png)
+
 # Script 
   Import library yang dibutuhkan dan pendefinisian
 ```
@@ -100,13 +103,7 @@ F = np.zeros((Nt+1,Ny+2,Nx+2))
   ```
     
 # *Hidrodinamika 1D*
-# Teori Dasar:
-Hidrodinamika adalah salah satu cabang ilmu pengetahuan yang mempelajari gerak liquid atau gerak fluida cair khususnya gerak air yang dipengaruhi oleh gaya eksternal dan internal. Terdapat dua jenis transport dalam hidrodinamika, yaitu adveksi dan difusi. Pada pemodelan hidrodinamika 1D, digunakan konversi massa dan hukum momentum yang diperuntukkan untuk simulasi tinggi muka air laut dan aliran arus yang dibangkitkan oleh angin, gelombang, pasang-surut, dll. 
-
-Persamaan Utama
-![image](https://user-images.githubusercontent.com/105919702/169819534-336d96bf-ee8b-444f-8772-46e4b6eb8c0b.png)
-![image (1)](https://user-images.githubusercontent.com/105919702/169819602-bb654f96-4c44-456b-adeb-03e44aecf3ce.png)
-
+penjelasan, script, dan output
 
 
 
