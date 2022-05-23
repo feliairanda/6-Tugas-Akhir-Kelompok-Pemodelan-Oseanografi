@@ -4,15 +4,48 @@ Repositori ini dibuat untuk memenuhi tugas akhir kelompok praktikum Pemodelan Os
 
 
 # *Adveksi-Difusi 1D*
-penjelasan dan output
-
 
 
 # *Adveksi-Difusi 2D*
-penjelasan, script, dan output
-
-
-
+# Teori Dasar:
+Adveksi yaitu mekanisme perpindahan massa suatu materi dari satu titik ke titik lainnya. Sedangkan Difusi yaitu mekanisme penyebaran konsentrasi akibat adanya kecepatan aliran dan perbedaan konsentrasi. Bentuk 2D terlihat dari beda waktu dan beda ruang.
+# Script 
+  Import library yang dibutuhkan dan pendefinisian
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import sys
+#%%
+def percentage(part, whole):
+        percentage = 100 * float(part)/float(whole)
+        return str(round(percentage,2)) + "%"
+```
+  Input parameter
+ ```
+ #input parameter awal
+C = 1.33 #Arus/Konstanta Adveksi
+ad = 1.33 #Konstanta Difusi
+theta = 0 + 33 #Arah Arus (Geographics Convertion (0 degree N))
+#parameter lanjutan
+q = 0.95 #syarat kestabilan
+x = 500 #Jumlah Grid x
+y = 500 #Jumlah Grid y
+dx = 5
+dy = 5
+Tend = 100 + 3 #Waktu Simulasi
+dt = 0.5
+#Polutan
+px = 250 #Grid x polutan dibuang
+py = 230 + 3 #Grid x polutan dibuang
+Ka = 1000 + 33 #Jumlah Polutan (Ic)
+```
+  Perhitungan U dan V
+ ```
+ u = C * np.sin(theta*np.pi/180)
+v = C * np.cos(theta*np.pi/180)
+dt_count = 1/((abs(u)/(q*dx))+(abs(v)/(q*dy))+(2*ad/(q*dx**2))+(2*ad/(q*dx**2)))
+```
+ 
 # *Hidrodinamika 1D*
 penjelasan, script, dan output
 
