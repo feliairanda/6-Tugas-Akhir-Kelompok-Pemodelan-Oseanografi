@@ -20,6 +20,7 @@ Persamaan difusi-adveksi satu dimensi (1D) dapat ditulis sebagai berikut :
 Dengan :
 
 V : Kecepatan Adveksi
+
 D : Koefisien Difusi
 
 Persamaan di atas terlebih dahulu diubah dalam bentuk operator diferensial L sampai bentuk operator adjoin L*.Setelah itu, domain semi-tak hingga dan syarat batas Dirichlet diterapkan pada solusi umum persamaan difusi-adveksi. Setelah melalui tahap-tahap tersebut, diperoleh solusi principal dan solusi reguler. Solusi principal merupakan solusi dari bentuk tak homogen persamaan diferensial tanpa memperhatikan syarat batas. Sedangkan, solusi reguler merupakan solusi dari bentuk homogen persamaan diferensial dengan syarat batas. Setelah diperoleh solusi principal dan solusi reguler, fungsi Green didapatkan dengan menjumlahkan keduanya. Terakhir, jika fungsi Green disubstitusikan ke solusi umum persamaan difusi-adveksi pada domain semi-tak hingga dan syarat batas Dirichlet, maka solusi persamaan difusi-adveksi dapat diperoleh dengan menyelesaikan integrasinya.
