@@ -14,6 +14,7 @@ Persamaan diferensial parsial merupakan persamaan diferensial yang melibatkan tu
 **Persamaan**
 
 Persamaan difusi-adveksi satu dimensi (1D) dapat ditulis sebagai berikut :
+
 ![image](https://user-images.githubusercontent.com/105999254/169869170-fdbf74a6-9cb8-4f19-b07d-030bf108c452.png)
 
 Dengan :
