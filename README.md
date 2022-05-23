@@ -2,9 +2,9 @@
 Repositori ini dibuat untuk memenuhi tugas akhir kelompok praktikum Pemodelan Oseanografi 2022. Terdapat 4 materi yang ada di respositori ini, yaitu Adveksi-Difusi 1D, Adveksi-Difusi 2D, Hidrodinamika 1D, dan Hidrodinamika 2D. Bahasa pemograman yang digunakan pada keempat materi tersebut adalah *Python* yang dapat dikerjakan pada *text editor Google Colaboratory dan Jupyter Notebook*. Modul yang digunakan pada repositori ini adalah *matplotlib*, *numpy*, dan *sys*.
 
 # Proses Penjalanan *Script Python*
-- Masuk ke command dan ketik perintah 'Jupyter Notebook'
-- Pilih New atau Anda bisa membuka project yang sudah dikerjakan sebelumnya
-- Masukan dan susun script python Anda dan klik Run untuk menjalankan script tersebut.
+- Masuk ke _command_ dan ketik perintah 'Jupyter Notebook'
+- Pilih _New_ atau Anda bisa membuka _project_ yang sudah dikerjakan sebelumnya
+- Masukan dan susun _script_ Python Anda dan klik _Run_ untuk menjalankan _script_ tersebut
 
 # *Adveksi-Difusi 1D*
 **LATAR BELAKANG**
