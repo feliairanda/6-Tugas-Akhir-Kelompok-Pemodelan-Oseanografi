@@ -267,7 +267,9 @@ plt.show()
 
 # *Hidrodinamika 2D*
 **TEORI DASAR:**
- Hidrodinamika merupakan ilmu yang mempelajari tentang gerak cair dan merupakan ilmu dasar dalam hidrolika dan oseanografi. Konsepdasar hidrodinamika teoritis didasarkan pada konsepan massa dasar atau partikel fluida. Partikel partikel ini dapat dianggap sebagai corpus (kumpulan) atau alienum (benda asing dalam mekanika kontinum). 
+ Hidrodinamika merupakan ilmu yang mempelajari tentang gerak cair dan merupakan ilmu dasar dalam hidrolika dan oseanografi. Konsep dasar hidrodinamika teoritis didasarkan pada konsepan massa dasar atau partikel fluida. Partikel partikel ini dapat dianggap sebagai corpus (kumpulan) atau alienum (benda asing dalam mekanika kontinum). 
+ ![Screenshot (20)](https://user-images.githubusercontent.com/106001831/169841331-ca93cc18-57de-49a2-9ebc-529f7915ddcb.png)
+Pada gambar dapat lihat konsep dasar dari hidrodinamika 1 dan 2 dimensi. Konsep dasar dari hidrodinamika 1 dimensi lebih mengkaji dengan menggunakan satu variabel saja. Dimana pada konsepan hidrodinamika1 dimensi dijelaskan sebuah penampang diambil tegak lurus terhadap aliran sungai. Dengan waterlevel yang seragam diseluruh penampang dan tidak dipengaruhi oleh kedalaman, serta kecepatan yang seragam melintasi penampang.
 **_OUTPUT_:** 
 
 ![Kelompok 6](https://user-images.githubusercontent.com/106006093/169685569-5a22b2ce-9e7c-442e-b167-ccc6a44bdb83.png)
