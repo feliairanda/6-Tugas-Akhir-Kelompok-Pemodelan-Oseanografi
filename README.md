@@ -1,7 +1,10 @@
 # 6-Tugas-Akhir-Kelompok-Pemodelan-Oseanografi
 Repositori ini dibuat untuk memenuhi tugas akhir kelompok praktikum Pemodelan Oseanografi 2022. Terdapat 4 materi yang ada di respositori ini, yaitu Adveksi-Difusi 1D, Adveksi-Difusi 2D, Hidrodinamika 1D, dan Hidrodinamika 2D. Bahasa pemograman yang digunakan pada keempat materi tersebut adalah *Python* yang dapat dikerjakan pada *text editor Google Colaboratory dan Jupyter Notebook*. Modul yang digunakan pada repositori ini adalah *matplotlib*, *numpy*, dan *sys*.
-# Proses Penjalanan 
 
+# Proses Penjalanan Script Python 
+- Buka command pada komputer Anda dan masukan perintah Jupyter notebook
+- Pilih new atau Anda bisa membuka script yang sudah disimpan sebelumnya
+- Susun script dan pilih run untuk menjalankan atau running
 
 # *Adveksi-Difusi 1D*
 
@@ -15,14 +18,14 @@ Adveksi yaitu mekanisme perpindahan massa suatu materi dari satu titik ke titik 
 
 - Dalam proses pemograman Adveksi dan Difusi 2 Dimensi ini dibutuhkan beberapa library yaitu numpy, sys, dan matplotlib. Library Numpy akan bekerja untuk memproses serta menyimpan data dan ditampilkan dalam bentuk grid atau matriks. Library Sys berfungsi dan bekerja untuk mengakses konfigurasi interpreter pada saat runtime dan berinteraksi dengan environment sistem operasi dan yang terakhir adalah library Matplotlib berfungsi sebagai pembuat plot grafik dari hasil pemograman yang sudah dirunning.
 - Adapun parameter yang dibutuhkan dalam proses running Adveksi dan Disfusi yaitu :
-C = kecepatan aliran
-Q = kriteria kestabilan
-Dt = perubahan waktu
-Dx = jarak antar grid horizontal
-Dy = jarak antar grid vertical
-Px = jumlah polutan pada sumbu x
-Py = jumlah polutan pada sumbu y
-Ic = jumlah polutan total
+- C = kecepatan aliran
+- Q = kriteria kestabilan
+- Dt = perubahan waktu
+- Dx = jarak antar grid horizontal
+- Dy = jarak antar grid vertical
+- Px = jumlah polutan pada sumbu x
+- Py = jumlah polutan pada sumbu y
+- Ic = jumlah polutan total
 
 # Script 
   Import library yang dibutuhkan dan pendefinisian
