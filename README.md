@@ -10,11 +10,11 @@ Repositori ini dibuat untuk memenuhi tugas akhir kelompok praktikum Pemodelan Os
 # Teori Dasar:
 Adveksi yaitu mekanisme perpindahan massa suatu materi dari satu titik ke titik lainnya. Sedangkan Difusi yaitu mekanisme penyebaran konsentrasi akibat adanya kecepatan aliran dan perbedaan konsentrasi. Bentuk 2D terlihat dari beda waktu dan beda ruang.
 ![image](https://user-images.githubusercontent.com/105983387/169820368-b5d5b5d8-a818-4bae-bbd8-5de4f62ee48f.png)
-Persamaan adveksi difusi merupakan persamaan umum yang menggambarkan proses adveksi serta difusi yang terjadi pada suatu materi sehingga untuk membentuk suatu persamaan model 2D yang mendekati proses kejadian di alam. Dimana kedua persamaan tersebut menggambarkan dua peristiwa yang terjadi dimana Adveksi adalah proses perpindahan suatu konsentrasi zat akibat adanya suatu aliran dan difusi merupakan proses perpindahan suatu konsentrasi zat dari konsentrasi tinggi ke konsentrasi yang rendah.
-Untuk pengaplikasian persamaan Adveksi-Difusi 2 Dimensi dalam bidang oseanografi, yaitu untuk memprediksi penyebaran nutrien dan polutan di suatu perairan.
+- Persamaan adveksi difusi merupakan persamaan umum yang menggambarkan proses adveksi serta difusi yang terjadi pada suatu materi sehingga untuk membentuk suatu persamaan model 2D yang mendekati proses kejadian di alam. Dimana kedua persamaan tersebut menggambarkan dua peristiwa yang terjadi dimana Adveksi adalah proses perpindahan suatu konsentrasi zat akibat adanya suatu aliran dan difusi merupakan proses perpindahan suatu konsentrasi zat dari konsentrasi tinggi ke konsentrasi yang rendah.
+- Untuk pengaplikasian persamaan Adveksi-Difusi 2 Dimensi dalam bidang oseanografi, yaitu untuk memprediksi penyebaran nutrien dan polutan di suatu perairan.
 
-Dalam proses pemograman Adveksi dan Difusi 2 Dimensi ini dibutuhkan beberapa library yaitu numpy, sys, dan matplotlib. Library Numpy akan bekerja untuk memproses serta menyimpan data dan ditampilkan dalam bentuk grid atau matriks. Library Sys berfungsi dan bekerja untuk mengakses konfigurasi interpreter pada saat runtime dan berinteraksi dengan environment sistem operasi dan yang terakhir adalah library Matplotlib berfungsi sebagai pembuat plot grafik dari hasil pemograman yang sudah dirunning.
-Adapun parameter yang dibutuhkan dalam proses running Adveksi dan Disfusi yaitu :
+- Dalam proses pemograman Adveksi dan Difusi 2 Dimensi ini dibutuhkan beberapa library yaitu numpy, sys, dan matplotlib. Library Numpy akan bekerja untuk memproses serta menyimpan data dan ditampilkan dalam bentuk grid atau matriks. Library Sys berfungsi dan bekerja untuk mengakses konfigurasi interpreter pada saat runtime dan berinteraksi dengan environment sistem operasi dan yang terakhir adalah library Matplotlib berfungsi sebagai pembuat plot grafik dari hasil pemograman yang sudah dirunning.
+- Adapun parameter yang dibutuhkan dalam proses running Adveksi dan Disfusi yaitu :
 C = kecepatan aliran
 Q = kriteria kestabilan
 Dt = perubahan waktu
