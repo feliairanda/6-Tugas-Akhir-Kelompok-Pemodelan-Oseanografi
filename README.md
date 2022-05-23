@@ -100,7 +100,13 @@ F = np.zeros((Nt+1,Ny+2,Nx+2))
   ```
     
 # *Hidrodinamika 1D*
-penjelasan, script, dan output
+# Teori Dasar:
+Hidrodinamika adalah salah satu cabang ilmu pengetahuan yang mempelajari gerak liquid atau gerak fluida cair khususnya gerak air yang dipengaruhi oleh gaya eksternal dan internal. Terdapat dua jenis transport dalam hidrodinamika, yaitu adveksi dan difusi. Pada pemodelan hidrodinamika 1D, digunakan konversi massa dan hukum momentum yang diperuntukkan untuk simulasi tinggi muka air laut dan aliran arus yang dibangkitkan oleh angin, gelombang, pasang-surut, dll. 
+
+Persamaan Utama
+![image](https://user-images.githubusercontent.com/105919702/169819534-336d96bf-ee8b-444f-8772-46e4b6eb8c0b.png)
+![image (1)](https://user-images.githubusercontent.com/105919702/169819602-bb654f96-4c44-456b-adeb-03e44aecf3ce.png)
+
 
 
 
