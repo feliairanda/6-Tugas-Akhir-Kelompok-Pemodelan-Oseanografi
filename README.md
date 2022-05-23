@@ -45,7 +45,7 @@ Ka = 1000 + 33 #Jumlah Polutan (Ic)
 v = C * np.cos(theta*np.pi/180)
 dt_count = 1/((abs(u)/(q*dx))+(abs(v)/(q*dy))+(2*ad/(q*dx**2))+(2*ad/(q*dx**2)))
 ```
-  Perhitungan Titik Lepas Polutan
+  Perhitungan titik lepas Polutan
  ```
  px1 = int (px/dx)
 py1 = int (py/dy)
@@ -81,7 +81,24 @@ F = np.zeros((Nt+1,Ny+2,Nx+2))
     F[n+1,Ny+1,:] = 0 #Batas Atas
     F[n+1,:,Nx+1] = 0 #Batas Kanan
   ```    
- 
+  Perintah untuk print hasil metode adveksi-difusi 2D
+  ```
+  #Output Gambar
+    plt.clf()
+    plt.pcolor(x_mesh, y_mesh, F[n+1,:,:],cmap = 'jet',shading = 'auto', edgecolors = 'k')
+    cbar = plt.colorbar(orientation = 'vertical',shrink = 0.95, extend ='both')
+    cbar.set_label(label='concentration', size = 8)
+    #plt.clim(0,100)
+    plt.title('Kelompok 6_Oseanografi 2020 - Skenario 1 \n t='+str(round(dt*(n+1),3))+', Kondisi Awal='+str(Ka),fontsize=10)
+    plt.xlabel('x_grid',fontsize=9)
+    plt.ylabel('y_grid',fontsize=9)
+    plt.axis([0,x,0,y])
+    #plt.pause(0.01)
+    plt.savefig(str(n+1)+'.png', dpi = 300)
+    plt.close()
+    print('running timestep ke :' + str(n+1) + ' dari :' + str(Nt) + ' ('+ percentage(n+1,Nt)+')')
+  ```
+    
 # *Hidrodinamika 1D*
 penjelasan, script, dan output
 
