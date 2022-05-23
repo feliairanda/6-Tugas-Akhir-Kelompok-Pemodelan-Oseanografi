@@ -7,11 +7,11 @@ Repositori ini dibuat untuk memenuhi tugas akhir kelompok praktikum Pemodelan Os
 - Masukan dan susun script python Anda dan klik Run untuk menjalankan script tersebut.
 
 # *Adveksi-Difusi 1D*
-**Latar Belakang**
+**Latar Belakang!**
 
 Persamaan diferensial parsial merupakan persamaan diferensial yang melibatkan turunan parsial dari satu atau lebih variabel terikat dengan lebih dari satu variabel bebas. Persamaan diferensial dapat digunakan untuk memodelkan permasalahan sehari-hari yang biasa ditemukan seperti konduksi panas pada batang atau lempengan, menentukan muatan atau arus dalam rangkaian listrik, menentukan getaran kawat atau membran, tingkat pertumbuhan populasi, dan masih banyak lagi. Salah satu contoh permasalahan yang dapat dimodelkan dalam persamaan diferensial adalah difusi dan adveksi. Difusi merupakan proses transportasi materi dari suatu sistem ke bagian yang lain sebagai hasil dari gerakan molekul acak. Sedangkan, adveksi merupakan proses transportasi berupa aliran rata-rata atau arus, seperti sungai atau gerakan pasang surut yang digerakkan oleh gaya gravitasi atau tekanan dan berupa gerak horizontal. Persamaan difusi-adveksi merupakan model matematika yang menggambarkan proses transportasi suatu zat yang dipengaruhi gaya gravitasi dan penyebaran sekaligus. 
 
-**Persamaan**
+**Persamaan!**
 
 Persamaan difusi-adveksi satu dimensi (1D) dapat ditulis sebagai berikut :
 
@@ -312,3 +312,5 @@ Pada gambar dapat lihat konsep dasar dari hidrodinamika 1 dan 2 dimensi. Konsep 
 5. Laviola Reycha Fitri Andhita/26050120120016/Oseanografi A
 6. Maheswari Pitra Qonita/26050120120020/Oseanografi A
 7. Satrio Harmin Galih Adi Yuwono/26050120140140/Oseanografi B
+
+
