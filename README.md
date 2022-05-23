@@ -14,7 +14,8 @@ Repositori ini dibuat untuk memenuhi tugas akhir kelompok praktikum Pemodelan Os
 
 Adveksi yaitu mekanisme perpindahan massa suatu materi dari satu titik ke titik lainnya. Sedangkan Difusi yaitu mekanisme penyebaran konsentrasi akibat adanya kecepatan aliran dan perbedaan konsentrasi. Bentuk 2D terlihat dari beda waktu dan beda ruang.
 
-![image](https://user-images.githubusercontent.com/105983387/169819206-a22c423e-a3d4-427b-b54d-c1e085592105.png)
+![image](https://user-images.githubusercontent.com/105983387/169831359-81180288-ad89-4b57-b053-f9cb0f05f55e.png)
+
 - Persamaan adveksi difusi merupakan persamaan umum yang menggambarkan proses adveksi serta difusi dimana menggambarkan sebuah perpindahan dan perluasan atau penyebaran sebuah konsentrasi zat yang dipengaruhi oleh gaya - gaya tertentu dalam arah horizontal. Dimana persamaan Adveksi dan Difusi 2 Dimensi yang terjadi akan diolah untuk membentuk suatu persamaan model 2 Diumensi yang mendekati proses kejadian di alam. 
 - Sebelum memulai pemrograman Adveksi-Difusi 2 Dimensi, dibutuhkan beberapa library dimana adanya library membuat pemrograman python menjadi lebih sederhana dan nyaman bagi programmer karena tidak perlu menulis kode yang sama berulang kali untuk program yang berbeda, yaitu numpy, sys dan matplotlib. Library Numpy akan bekerja untuk menyimpan data sebagai grid atau matriks. Sys berfungsi untuk mengakses konfigurasi interpreter pada saat runtime dan berinteraksi dengan environment sistem operasi. Library Matplotlib akan berfungsi untuk menggambarkan hasil running ke dalam plot grafik. 
 - Dalam pemodelan kali ini juga menggunakan beberapa parameter terkait yaitu : C = kecepatan aliran, Q = kriteria kestabilan, Dt = perubahan waktu, Dx = jarak antar grid horizontal, Dy = jarak antar grid vertical, Px = jumlah polutan pada sumbu x, Py = jumlah polutan pada sumbu y, dan Ic = jumlah polutan total.
