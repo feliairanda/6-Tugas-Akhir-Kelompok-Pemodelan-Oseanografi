@@ -50,7 +50,7 @@ dt_count = 1/((abs(u)/(q*dx))+(abs(v)/(q*dy))+(2*ad/(q*dx**2))+(2*ad/(q*dx**2)))
  px1 = int (px/dx)
 py1 = int (py/dy)
 ```
-  Penyederhanaan fungsi dan perhitungan cfl
+  Penyederhanaan fungsi dan perhitungan CFL
  ```
  lx = u*dt/dx
 ly = v*dt/dy
@@ -61,6 +61,26 @@ cfl = (2*ax + 2*ay + abs(lx) + abs(ly))
     print('CFL Violated, Please use dt :'+str(round(dt_count,4)))
     sys.exit()
  ```
+  Pembuatan Grid
+  ```
+  x_grid = np.linspace(0-dx, x+dx, Nx+2) #Untuk GhostNode pada Ujung Boundary
+y_grid = np.linspace(0-dy, y+dx, Ny+2) #Untuk GhostNode pada Ujung Boundary
+t = np.linspace(0, Tend, Nt+1)
+x_mesh,y_mesh = np.meshgrid(x_grid, y_grid)
+F = np.zeros((Nt+1,Ny+2,Nx+2))
+```
+  Iterasi
+  ```
+  for n in range (0,Nt):
+    for i in range (1,Ny+1):
+        for j in range (1,Nx+1):
+            F[n+1,i,j]=((F[n,i,j]*(1-abs(lx)-abs(ly))) + (0.5*(F[n,i-1,j]*(ly+abs(ly)))) + (0.5*(F[n,i+1,j]*(abs(ly)-ly))))
+    #Kondisi Batas (Dirichlet Condition)
+    F[n+1,0,:] = 0 #Batas Bawah
+    F[n+1,:,0] = 0 #Batas Kiri
+    F[n+1,Ny+1,:] = 0 #Batas Atas
+    F[n+1,:,Nx+1] = 0 #Batas Kanan
+  ```    
  
 # *Hidrodinamika 1D*
 penjelasan, script, dan output
