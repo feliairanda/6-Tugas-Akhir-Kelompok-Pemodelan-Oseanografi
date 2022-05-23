@@ -45,6 +45,22 @@ Ka = 1000 + 33 #Jumlah Polutan (Ic)
 v = C * np.cos(theta*np.pi/180)
 dt_count = 1/((abs(u)/(q*dx))+(abs(v)/(q*dy))+(2*ad/(q*dx**2))+(2*ad/(q*dx**2)))
 ```
+  Perhitungan Titik Lepas Polutan
+ ```
+ px1 = int (px/dx)
+py1 = int (py/dy)
+```
+  Penyederhanaan fungsi dan perhitungan cfl
+ ```
+ lx = u*dt/dx
+ly = v*dt/dy
+ax = ad*dt/dx**2
+ay = ad*dt/dy**2
+cfl = (2*ax + 2*ay + abs(lx) + abs(ly))
+ if cfl >= q:
+    print('CFL Violated, Please use dt :'+str(round(dt_count,4)))
+    sys.exit()
+ ```
  
 # *Hidrodinamika 1D*
 penjelasan, script, dan output
