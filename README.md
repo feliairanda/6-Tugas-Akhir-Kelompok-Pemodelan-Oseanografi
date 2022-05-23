@@ -1,34 +1,21 @@
 # 6-Tugas-Akhir-Kelompok-Pemodelan-Oseanografi
 Repositori ini dibuat untuk memenuhi tugas akhir kelompok praktikum Pemodelan Oseanografi 2022. Terdapat 4 materi yang ada di respositori ini, yaitu Adveksi-Difusi 1D, Adveksi-Difusi 2D, Hidrodinamika 1D, dan Hidrodinamika 2D. Bahasa pemograman yang digunakan pada keempat materi tersebut adalah *Python* yang dapat dikerjakan pada *text editor Google Colaboratory dan Jupyter Notebook*. Modul yang digunakan pada repositori ini adalah *matplotlib*, *numpy*, dan *sys*.
+# Proses Penjalanan 
 
-# Proses Penjalanan Script Python 
-- Buka command pada komputer Anda dan masukan perintah Jupyter notebook
-- Pilih new atau Anda bisa membuka script yang sudah disimpan sebelumnya
-- Susun script dan pilih run untuk menjalankan atau running
 
 # *Adveksi-Difusi 1D*
 
 
 # *Adveksi-Difusi 2D*
-# Teori Dasar:
+**TEORI DASAR:** 
+
 Adveksi yaitu mekanisme perpindahan massa suatu materi dari satu titik ke titik lainnya. Sedangkan Difusi yaitu mekanisme penyebaran konsentrasi akibat adanya kecepatan aliran dan perbedaan konsentrasi. Bentuk 2D terlihat dari beda waktu dan beda ruang.
-![image](https://user-images.githubusercontent.com/105983387/169820368-b5d5b5d8-a818-4bae-bbd8-5de4f62ee48f.png)
-- Persamaan adveksi difusi merupakan persamaan umum yang menggambarkan proses adveksi serta difusi yang terjadi pada suatu materi sehingga untuk membentuk suatu persamaan model 2D yang mendekati proses kejadian di alam. Dimana kedua persamaan tersebut menggambarkan dua peristiwa yang terjadi dimana Adveksi adalah proses perpindahan suatu konsentrasi zat akibat adanya suatu aliran dan difusi merupakan proses perpindahan suatu konsentrasi zat dari konsentrasi tinggi ke konsentrasi yang rendah.
-- Untuk pengaplikasian persamaan Adveksi-Difusi 2 Dimensi dalam bidang oseanografi, yaitu untuk memprediksi penyebaran nutrien dan polutan di suatu perairan.
 
-- Dalam proses pemograman Adveksi dan Difusi 2 Dimensi ini dibutuhkan beberapa library yaitu numpy, sys, dan matplotlib. Library Numpy akan bekerja untuk memproses serta menyimpan data dan ditampilkan dalam bentuk grid atau matriks. Library Sys berfungsi dan bekerja untuk mengakses konfigurasi interpreter pada saat runtime dan berinteraksi dengan environment sistem operasi dan yang terakhir adalah library Matplotlib berfungsi sebagai pembuat plot grafik dari hasil pemograman yang sudah dirunning.
-- Adapun parameter yang dibutuhkan dalam proses running Adveksi dan Disfusi yaitu :
-- C = kecepatan aliran
-- Q = kriteria kestabilan
-- Dt = perubahan waktu
-- Dx = jarak antar grid horizontal
-- Dy = jarak antar grid vertical
-- Px = jumlah polutan pada sumbu x
-- Py = jumlah polutan pada sumbu y
-- Ic = jumlah polutan total
+![image](https://user-images.githubusercontent.com/105983387/169819206-a22c423e-a3d4-427b-b54d-c1e085592105.png)
 
-# Script 
-  Import library yang dibutuhkan dan pendefinisian
+**_SCRIPT_**
+
+Import library yang dibutuhkan dan pendefinisian
 ```
 import matplotlib.pyplot as plt
 import numpy as np
@@ -118,14 +105,164 @@ F = np.zeros((Nt+1,Ny+2,Nx+2))
   ```
     
 # *Hidrodinamika 1D*
-penjelasan, script, dan output
+**TEORI DASAR:**  
+Hidrodinamika merupakan salah satu cabang ilmu pengetahuan yang mempelajari gerak liquid atau gerak fluida cair khususnya gerak air yang dipengaruhi oleh gaya eksternal dan internal. Terdapat dua jenis transport dalam hidrodinamika, yaitu Adveksi dan Difusi. Pada pemodelan hidrodinamika 1D, digunakan konversi massa dan hukum momentum yang diperuntukkan untuk simulasi tinggi muka air laut dan aliran arus yang dibangkitkan oleh angin, gelombang, pasang surut, dll
+
+**PERSAMAAN UTAMA**
+
+![image](https://user-images.githubusercontent.com/105919702/169822268-60a1846d-10e2-4afe-a75a-9f69b561798f.png)
+![image (1)](https://user-images.githubusercontent.com/105919702/169822291-9e68c034-dedd-462a-a055-3e17f3cb56dc.png)
+
+
+**PERSAMAAN PEMBANGUN**
+
+![image (2)](https://user-images.githubusercontent.com/105919702/169822321-3cc43449-d80c-462a-a06a-0b00e1bd4dc3.png)
+![image (3)](https://user-images.githubusercontent.com/105919702/169822336-653ad4db-7bc5-4370-838f-919bf20676b4.png)
+
+
+**PERSAMAAN TRANSPORT**
+
+![image (4)](https://user-images.githubusercontent.com/105919702/169822859-a7364600-eea6-4948-bcd9-46d61ca18e68.png)
+![image (5)](https://user-images.githubusercontent.com/105919702/169822888-40c993f1-0fe3-4035-a772-a3101844906a.png)
+
+
+**DISKRETISASI**
+
+![image (6)](https://user-images.githubusercontent.com/105919702/169823081-a6a70b29-524c-44d6-85f3-f466d3bf1500.png)
+![image (7)](https://user-images.githubusercontent.com/105919702/169823117-b3c32d30-96e7-4da2-9436-afb0c0fcb239.png)
+
+
+**PENYELESAIAN ANALITIK**
+
+![image (8)](https://user-images.githubusercontent.com/105919702/169823289-99cab16c-43b4-4b07-93a2-f7eab5f60999.png)
+![image (9)](https://user-images.githubusercontent.com/105919702/169823318-a0d84b7d-f3b7-4319-901d-db6853641161.png)
+
+
+**_SCRIPT_**
+
+Import Modul
+```
+import matplotlib.pyplot as plt
+import numpy as np
+```
+
+Proses Awal
+```
+p = 5000 #Panjang Grid
+T = 1200 #Waktu Simulasi
+A = 0.5 #Amplitudo
+D = 15 #Depth
+dt = 2
+dx = 100
+To = 300 #Periode
+
+g = 9.8
+pi = np.pi
+C = np.sqrt(g*D) #Kecepatan arus
+s = 2*pi/To #Kecepatan sudut gelombang
+L = C*To #Panjang gelombang
+k = 2*pi/L #Koefisien panjang gelombang
+Mmax = int(p//dx)
+Nmax = int(T//dt)
+
+zo = [None for _ in range(Mmax)]
+uo = [None for _ in range(Mmax)]
+
+hasilu = [None for _ in range(Nmax)]
+hasilz = [None for _ in range(Nmax)]
+
+for i in range(1, Mmax+1):
+  zo[i-1] = A*np.cos(k*(i)*dx)
+  uo[i-1] = A*C*np.cos(k*((i)*dx+(0.5)*dx))/(D+zo[i-1])
+for i in range(1, Nmax+1):
+  zb = [None for _ in range(Mmax)]
+  ub = [None for _ in range(Mmax)]
+  zb[0] = A*np.cos(s*(i)*dt)
+  ub[-1] = A*C*np.cos(k*L-s*(i)*dt)/(D+zo[-1])
+  for j in range(1, Mmax):
+    ub[j-1] = uo[j-1]-g*(dt/dx)*(zo[j]-zo[j-1])
+  for k in range(2, Mmax+1):
+    zb[k-1] = zo[k-1]-(D+zo[k-1])*(dt/dx)*(ub[k-1]-ub[k-2])
+    hasilu[i-1] = ub
+    hasilz[i-1] = zb
+  for p in range(0, Mmax):
+    uo[p] = ub[p]
+    zo[p] = zb[p]
+```
+
+Pembuatan Grafik
+```
+def rand_col_hex_string():
+    return f'#{format(np.random.randint(0,16777215), "#08x")[2:]}'
+    
+hasilu_np = np.array(hasilu)
+hasilz_np = np.array(hasilz)
+
+fig0, ax0 = plt.subplots(figsize=(12,8))
+for i in range(1, 16):
+    col0 = rand_col_hex_string()
+    line, = ax0.plot(hasilu_np[:,i-1], c=col0, label=f'n={i}')
+    ax0.legend()
+    
+    ax0.set(xlabel='Waktu', ylabel='Kecepatan Arus', 
+            title= ''' Kelompok 6_Oseanografi 2020
+            Perubahan Kecepatan Arus Dalam Grid Tertentu di Sepanjang Waktu''')
+    ax0.grid()
+    
+fig1, ax1 = plt.subplots(figsize=(12,8))
+for i in range(1, 16):
+    col1 = rand_col_hex_string()
+    line, = ax1.plot(hasilz_np[:,i-1], c=col1, label=f'n={i}')
+    ax1.legend()
+    
+    ax1.set(xlabel='Waktu', ylabel='Elevasi Muka Air', 
+            title= ''' Kelompok 6_Oseanografi 2020
+            Perubahan Elevasi Permukaan Air Dalam Grid Tertentu di Sepanjang Waktu''')
+    ax1.grid()
+    
+fig2, ax2 = plt.subplots(figsize=(12,8))
+for i in range(1, 16):
+    col2 = rand_col_hex_string()
+    line, = ax2.plot(hasilu_np[i-1], c=col2, label=f't={i}')
+    ax2.legend()
+    
+    ax2.set(xlabel='Grid', ylabel='Kecepatan Arus', 
+            title= ''' Kelompok 6_Oseanografi 2020
+            Perubahan Kecepatan Arus Dalam Waktu Tertentu di Sepanjang Grid''')
+    ax2.grid()
+
+fig3, ax3 = plt.subplots(figsize=(12,8))
+for i in range(1, 16):
+    col3 = rand_col_hex_string()
+    line, = ax3.plot(hasilz_np[i-1], c=col3, label=f't={i}')
+    ax3.legend()
+    
+    ax3.set(xlabel='Grid', ylabel='Elevasi Muka Air', 
+            title= ''' Kelompok 6_Oseanografi 2020
+            Perubahan Elevasi Permukaan Air Dalam Waktu Tertentu di Sepanjang Grid''')
+    ax3.grid()
+    
+plt.show()
+```
+
+**OUTPUT**
+
+![Perubahan Elevasi Permukaan Air Dalam Grid Tertentu di Sepanjang Waktu](https://user-images.githubusercontent.com/105919702/169825151-918a97ce-02c4-4658-9d59-3fc021b13118.png)
+![Perubahan Kecepatan Arus Dalam Grid Tertentu di Sepanjang Waktu](https://user-images.githubusercontent.com/105919702/169825214-6c79d76c-4c89-4620-80db-da6fca36f5b6.png)
+![Perubahan Elevasi Permukaan Air Dalam Waktu Tertentu di Sepanjang Grid](https://user-images.githubusercontent.com/105919702/169825245-c32c5a57-9461-4895-9989-de6bdd92bb3d.png)
+![Perubahan Kecepatan Arus Dalam Waktu Tertentu di Sepanjang Grid](https://user-images.githubusercontent.com/105919702/169825282-0fced3b7-f3a6-4274-a125-849f44c03ded.png)
+
+
+
+
 
 
 
 # *Hidrodinamika 2D*
-# Teori Dasar:
+**TEORI DASAR:**
 
-# Output:
+**_OUTPUT_:** 
+
 ![Kelompok 6](https://user-images.githubusercontent.com/106006093/169685569-5a22b2ce-9e7c-442e-b167-ccc6a44bdb83.png)
 # Analisis:
 Data parameter yang digunakan diantaranya tekanan, kecepatan angin, arah angin, dan temperatur air pada tanggal 22 Maret 2022 sampai 8 Mei 2022. Grafik diatas diperoleh dari hasil ekstrak data NDBC (National Data Buoy Center) milik NOAA yang kemudian diplot-kan dalam bentuk grafik. Lokasi pengamatan yaitu di stastion ID 41008 yang berada di lepas pantai Georgia, Amerika Serikat, tepatnya pada tenggara Savannah pada koordinat 31.400 N 80.866 W (31°24'0" N 80°51'59" W). Berdasarkan hasil diatas, terdapat 3 grafik dengan warna yang berbeda. Grafik pertama merupakan grafik tekanan, dari gambar tersebut tekanan di lokasi yang ditinjau menunjukkan nilai terendah sebesar 1002 hPa dan yang tertinggi 1038 hPa. Namun di setiap minggunya, grafik menggambarkan fluktuasi tekanan yang tidak konstan dimana tekanan cenderung naik turun dengan nilai terendah berada pada awal bulan April dan nilai tertinggi berada pada akhir bulan April. Begitupula dengan grafik kecepatan angin dan arah angin yang menggambarkan fluktuasi naik turun dengan kecepatan angin tertinggi sebesar 22 m/s dan yang terendah sebesar 0,1 m/s. Arah angin berkisar di 20° - 320°. Untuk grafik ketiga yaitu grafik temperatur yang digambarkan dengan warna biru langit menunjukkan fluktuasi yang tidak konstan dengan kisaran rata-rata berada di 21°C. Suhu tertinggi berada pada awal Mei dengan nilai 26°C dan yang terendah terjadi pada akhir Maret dengan nilai 17°C. Dari grafik yang terlihat, suhu dan tekanan memiliki bentuk grafik yang berbanding terbalik, begitupula dengan suhu dan kecepatan angin. Artinya ketika suhu bernilai rendah, maka tekanan dan kecepatan angin tinggi. Sedangkan untuk hubungan tekanan dan kecepatan angin yaitu linier, sehingga bentuk grafik nya hampir sama. Tekanan udara di permukaan bumi ditentukan oleh kerapatan massa udara. Semakin padat udara, semakin tinggi tekanannya. Kepadatan udara erat kaitannya dengan suhu, radiasi matahari, kelembaban dan gravitasi. Di daerah dengan udara tipis, tekanan permukaan rendah. Di daerah dengan udara padat, tekanan permukaan tinggi. Temperatur dan tekanan itu sendiri mempunyai hubungan terbalik, ketika temperatur rendah maka tekanannya tinggi karena densitas massa udara disana tinggi. Di sisi lain, ketika suhu tinggi, tekanan udara di atas rendah karena densitas massa rendah. Perbedaan tekanan ini kemudian menciptakan gerakan angin dan mempengaruhi kecepatan angin. Perbedaan tekanan udara pada daerah yang berbeda pada ketinggian yang sama disebabkan oleh perbedaan radiasi matahari yang diterima. Hal ini sesuai dengan pandangan Stewart (2008) bahwa angin bergerak dari tekanan tinggi ke tekanan rendah dan kecepatan angin ditentukan oleh laju perubahan tekanan, dimana tekanan udara mempengaruhi perubahan kecepatan angin. Besarnya kecepatan angin ini akan berhubungan dengan tinggi gelombang yang ditimbulkan oleh angin tersebut. Bila kecepatan angin tinggi maka gelombang di daerah tersebut juga akan semakin tinggi.
