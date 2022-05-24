@@ -291,6 +291,9 @@ Pada gambar dapat lihat konsep dasar dari hidrodinamika 1 dan 2 dimensi. Konsep 
 1. Pemodelan Tumpahan Minyak terhadap Topografi Dasar Laut. Dimana untuk variabel 1 adalah Tumpahan Minyak dan variabel 2 adalah Ketinggian Topografi Laut.
 2. Pemodelan Coastal Dynamics dan Sedimentasi Pantai. Dimana untuk variabel 1 adalah Dinamika Pesisir dan variabel 2 adalah Pergerakan Sedimen.
 
+**PERSAMAAN**
+
+![Screenshot (22)](https://user-images.githubusercontent.com/106001831/169990849-8a82a226-fb1e-49e9-a9f1-81f0cffb182d.png)
 
 **_OUTPUT_:** 
 
