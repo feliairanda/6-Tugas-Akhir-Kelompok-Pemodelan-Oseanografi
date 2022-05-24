@@ -48,7 +48,7 @@ def percentage(part, whole):
         percentage = 100 * float(part)/float(whole)
         return str(round(percentage,2)) + "%"
 ```
- _ Input_ parameter
+ _Input_ parameter
  ```
  #input parameter awal
 C = 1.33 #Arus/Konstanta Adveksi
