@@ -48,7 +48,7 @@ def percentage(part, whole):
         percentage = 100 * float(part)/float(whole)
         return str(round(percentage,2)) + "%"
 ```
-  Input parameter
+ _ Input_ parameter
  ```
  #input parameter awal
 C = 1.33 #Arus/Konstanta Adveksi
@@ -127,12 +127,14 @@ F = np.zeros((Nt+1,Ny+2,Nx+2))
     print('running timestep ke :' + str(n+1) + ' dari :' + str(Nt) + ' ('+ percentage(n+1,Nt)+')')
   ```
  **OUTPUT**
+ 
    Pada t=0.5   ![1](https://user-images.githubusercontent.com/106000656/170006015-39422510-1a7c-4fd3-9a8c-a2dfaa0b2554.png)
    Pada t=103   ![206](https://user-images.githubusercontent.com/106000656/170006240-ee9ab714-4305-4a11-ae5d-d00c9e7869c1.png)
  PEMBAHASAN :
 - Adapun nilai CFL atau Courant-Friedrichs-Lewy adalah kondisi yang diperlukan untuk konvergensi sambil menyelesaikan persamaan diferensial parsial tertentu secara numeric, dimana nilai CFL erat kaitanya dengan hasil pemodelan. Nilai CFL biasanya memiliki rentangan 0 – 1 dimana jika melebihi akan membuat hasil pemodelan tidak valid atau eror.
 - Adapun hubungan antara nilai C dan Ad dimana dijelaskan nilai C merupakan sebuah besaran kecepatan polutan dan nilai Ad merupakan sebuah koefisien difusi. Jika nilai C=0 dan nilai ad=1, maka dapat dipastikan bahwa polutan tidak akan bergerak dan tetap di tempat yang sama tetapi mengalami perubahan dan penyebaran (difusi) hal ini dikarenakan kecepatan polutan tidak ada dan dipastikan akan tepat pada satu titik atau grid. 
-- Hasil tersebut perlu disempurnakan, mengingat ini adalah pemodelan 2 dimensi dimana hanya mengikat dua ruang saja yaitu x dan y. Pelengkapan data - data terkait kondisi perairan dan konsentrasi polutan seperti pasang surut, musim, fluktuasi konsentrasi dan debit diperlukan sehingga akan lebih representatif. Kemudian untuk mendapatkan validasi yang lebih baik lagi dibutuhkan juga pengukuran data arus dilapangan ( Handiani et al., 2008)
+- Hasil tersebut perlu disempurnakan, mengingat ini adalah pemodelan 2 dimensi dimana hanya mengikat dua ruang saja yaitu x dan y. Pelengkapan data - data terkait kondisi perairan dan konsentrasi polutan seperti pasang surut, musim, fluktuasi konsentrasi dan debit diperlukan sehingga akan lebih representatif. Kemudian untuk mendapatkan validasi yang lebih baik lagi dibutuhkan juga pengukuran data arus dilapangan ( Handiani et al., 2008).
+
 # *Hidrodinamika 1D*
 **TEORI DASAR:**  
 Hidrodinamika merupakan salah satu cabang ilmu pengetahuan yang mempelajari gerak liquid atau gerak fluida cair khususnya gerak air yang dipengaruhi oleh gaya eksternal dan internal. Terdapat dua jenis transport dalam hidrodinamika, yaitu Adveksi dan Difusi. Pada pemodelan hidrodinamika 1D, digunakan konversi massa dan hukum momentum yang diperuntukkan untuk simulasi tinggi muka air laut dan aliran arus yang dibangkitkan oleh angin, gelombang, pasang surut, dll
