@@ -1,4 +1,6 @@
 # 6-Tugas-Akhir-Kelompok-Pemodelan-Oseanografi
+SELAMAT DATANG DAN SELAMAT BERSELANCAR 🥸
+
 Repositori ini dibuat untuk memenuhi tugas akhir kelompok praktikum Pemodelan Oseanografi 2022. Terdapat 4 materi yang ada di respositori ini, yaitu Adveksi-Difusi 1D, Adveksi-Difusi 2D, Hidrodinamika 1D, dan Hidrodinamika 2D. Bahasa pemograman yang digunakan pada keempat materi tersebut adalah *Python* yang dapat dikerjakan pada *text editor Google Colaboratory dan Jupyter Notebook*. Modul yang digunakan pada repositori ini adalah *matplotlib*, *numpy*, dan *sys*.
 
 # Proses Penjalanan *Script Python*
@@ -315,6 +317,7 @@ Pada gambar dapat lihat konsep dasar dari hidrodinamika 1 dan 2 dimensi. Konsep 
 2. Klik *script* yang ingin diunduh.
 3. *Script* akan terunduh secara otomatis.
 
+Terimakasih sudah berkunjung ke repositori dari kelompok kami, semoga suka dan dapat menambah wawasan untuk kita bersama
 
 # Kelompok 6 Pemodelan Oseanografi
 1. Abyan Maziakiko Nuhafizha/26050120140036/Oseanografi B
