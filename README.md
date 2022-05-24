@@ -126,7 +126,12 @@ F = np.zeros((Nt+1,Ny+2,Nx+2))
     plt.close()
     print('running timestep ke :' + str(n+1) + ' dari :' + str(Nt) + ' ('+ percentage(n+1,Nt)+')')
   ```
-    
+ **OUTPUT**
+   Pada t=0.5
+   ![1](https://user-images.githubusercontent.com/106000656/170006015-39422510-1a7c-4fd3-9a8c-a2dfaa0b2554.png)
+   Pada t=103
+   ![206](https://user-images.githubusercontent.com/106000656/170006240-ee9ab714-4305-4a11-ae5d-d00c9e7869c1.png)
+ 
 # *Hidrodinamika 1D*
 **TEORI DASAR:**  
 Hidrodinamika merupakan salah satu cabang ilmu pengetahuan yang mempelajari gerak liquid atau gerak fluida cair khususnya gerak air yang dipengaruhi oleh gaya eksternal dan internal. Terdapat dua jenis transport dalam hidrodinamika, yaitu Adveksi dan Difusi. Pada pemodelan hidrodinamika 1D, digunakan konversi massa dan hukum momentum yang diperuntukkan untuk simulasi tinggi muka air laut dan aliran arus yang dibangkitkan oleh angin, gelombang, pasang surut, dll
